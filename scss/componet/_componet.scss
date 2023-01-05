@@ -1,0 +1,80 @@
+
+ .content {
+    display: grid;
+    grid-template-columns: repeat(3 , 1fr);
+    grid-gap: 10px;
+    margin: 0% auto; 
+    justify-content: center;
+    width: 80%;
+    padding: 200px;
+}
+.box {
+    background: yellow;
+    border:2px solid green;
+    height: 200px;
+    animation-name: ani-frist;
+    animation-duration: 4s;
+    animation-delay: 2;
+    animation-iteration-count: 5;
+    animation-fill-mode: both;
+    animation-direction: normal;
+    &__title {
+        font-size: 1.5rem;
+        font-family: sans-serif;
+        text-align: center;
+        padding: 80px;
+    }
+}
+.box-two {
+   background: gold;
+   border:2px solid rebeccapurple;
+   height: 200px; 
+   animation-name: ani-second;
+   animation-duration: 4s;
+   animation-delay: 2;
+   animation-iteration-count: 5;
+   animation-fill-mode: both;
+   animation-direction: normal;
+   &__title {
+       font-size: 1.5rem;
+       font-family: sans-serif;
+       text-align: center;
+       padding: 80px;
+   }
+
+}
+.box-three {
+   background:  royalblue;
+   border:2px solid red;
+   height: 200px; 
+   animation-name: ani-third;
+   animation-duration: 4s;
+   animation-delay: 2;
+   animation-iteration-count: 5;
+   animation-fill-mode: both;
+   animation-direction: normal;
+   &__title {
+       font-size: 1.5rem;
+       font-family: sans-serif;
+       text-align: center;
+       padding: 80px;
+   }
+}
+@keyframes ani-frist {
+   0% {background:red }
+   25% {background: plum}
+   75% {background: pink}
+   100% {background: rebeccapurple}
+}
+@keyframes ani-second {
+   0% {background:navajowhite }
+   25% {background: mediumseagreen}
+   75% {background:  lawngreen}
+   100% {background: hotpink}
+}
+@keyframes ani-third {
+   0% {background: white }
+   25% {background:tomato}
+   75% {background:powderblue}
+   100% {background: rebeccapurple}
+}
